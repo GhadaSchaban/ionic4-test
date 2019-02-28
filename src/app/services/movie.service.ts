@@ -15,7 +15,11 @@ export enum SearchType {
   providedIn: 'root'
 })
 export class MovieService {
-  url = 'http://www.omdbapi.com/';
+  //https important when serving PWA
+  //Ionic PWA builds for prod requires an https connection
+  //Fetching URLs that are not https will cause a Mixed Active Content Error
+  //https://developer.mozilla.org/en-US/docs/Web/Security/Mixed_content
+  url = 'https://www.omdbapi.com/';
   apiKey = '3decd328'; // <-- Enter your own key here!
 
   /**

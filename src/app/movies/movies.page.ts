@@ -17,13 +17,17 @@ export class MoviesPage implements OnInit {
    * Constructor of our first page
    * @param movieService The movie Service to get data
    */
-  constructor(private movieService: MovieService) { }
+  constructor(
+    private movieService: MovieService,
+  ) { }
 
-  ngOnInit() { }
+  ngOnInit() {
+
+  }
 
   searchChanged() {
     // Call our service function which returns an Observable
     this.results = this.movieService.searchData(this.searchTerm, this.type);
-    
+
   }
 }
