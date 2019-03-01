@@ -1,6 +1,14 @@
 ### Testing Ionic 4
 
-#### Usage
+#### Run the Project
+> See pwa_releases and bin_releases directories
+##### PWA
+TODO hosting PWA on regular webservers
+
+##### Android
+Supported Versions: ^5.1
+
+#### Development
 
 >Assuming We use Debian Linux
 
@@ -32,7 +40,6 @@ ionic cordova run android -l
 TODO
 
 #### Build for Production
-
 ##### PWA:
 
 ```sh

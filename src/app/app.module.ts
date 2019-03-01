@@ -11,9 +11,9 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { HttpClientModule } from '@angular/common/http';
 
-//PWA imports
-// import { ServiceWorkerModule } from '@angular/service-worker';
-// import { environment } from '../environments/environment';
+//PWA Service Worker
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [AppComponent],
@@ -22,8 +22,8 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserModule,
     IonicModule.forRoot(),
     AppRoutingModule,
-    HttpClientModule
-    // ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
+    HttpClientModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [
     StatusBar,
