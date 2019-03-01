@@ -36,3 +36,8 @@ UserInterfaceState.xcuserstate
 firebase.json
 .firebaserc
 .firebase/
+
+www/
+
+platforms/
+plugins/
